@@ -1,0 +1,35 @@
+POST http://localhost:3001/api/patient/create/641bd29ccb832e239de8f21f
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjljY2I4MzJlMjM5ZGU4ZjIxZiIsImVtYWlsIjoiamRAbWFpbC5jb20iLCJhY2Nlc3NfcGVybSI6Imdyb3VuZC13b3JrZXIiLCJpYXQiOjE2Nzk1NzUwMjgsImV4cCI6MTY3OTY2MTQyOH0.w5oCHGzEXya-XENUkK1vizngK4OHERM1VbTOqe3yJe0
+Content-Type: application/json
+
+{
+    "firstname": "John",
+    "lastname": "Doe",
+    "dob": "20015-03-23",
+    "contact": "1234567890"
+}
+
+###
+
+GET http://localhost:3001/api/patient/get/641bd26fcb832e239de8f21d
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjZmY2I4MzJlMjM5ZGU4ZjIxZCIsImVtYWlsIjoiamQyQG1haWwuY29tIiwiYWNjZXNzX3Blcm0iOiJhZG1pbiIsImlhdCI6MTY4MjAyOTI4MSwiZXhwIjoxNjgyMTE1NjgxfQ.-ByBGZNWY3W6CoI14CCCw210xwB5CMdHiVG7kuw2r7M
+
+###
+
+GET http://localhost:3001/api/patient/get/641bd26fcb832e239de8f21d/6433d4570efeb4de701bb86b
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjZmY2I4MzJlMjM5ZGU4ZjIxZCIsImVtYWlsIjoiamQyQG1haWwuY29tIiwiYWNjZXNzX3Blcm0iOiJhZG1pbiIsImlhdCI6MTY4MjAyOTI4MSwiZXhwIjoxNjgyMTE1NjgxfQ.-ByBGZNWY3W6CoI14CCCw210xwB5CMdHiVG7kuw2r7M
+
+###
+
+POST http://localhost:3001/api/patient/find/641bd26fcb832e239de8f21d
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjZmY2I4MzJlMjM5ZGU4ZjIxZCIsImVtYWlsIjoiamQyQG1haWwuY29tIiwiYWNjZXNzX3Blcm0iOiJhZG1pbiIsImlhdCI6MTY4MjAyOTI4MSwiZXhwIjoxNjgyMTE1NjgxfQ.-ByBGZNWY3W6CoI14CCCw210xwB5CMdHiVG7kuw2r7M
+Content-Type: application/json
+
+{
+    "firstname": "Harshavardhan",
+    "lastname": "Pandurangan",
+    "contact": "9094717606"
+}
+
+
+###

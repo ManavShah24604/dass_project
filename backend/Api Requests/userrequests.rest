@@ -1,0 +1,42 @@
+POST http://localhost:3001/api/user/create
+Content-Type: application/json
+
+{
+    "firstname": "John5",
+    "lastname": "Doe5",
+    "email": "jd5@mail.com",
+    "password": "pwd",
+    "confirmPassword": "pwd",
+    "contact": "1234567890"
+}
+
+    # "access_perm": "admin",
+###
+
+POST http://localhost:3001/api/user/login
+Content-Type: application/json
+
+{
+    "email": "jd2@mail.com",
+    "password": "pwd"
+}
+
+###
+
+GET http://localhost:3001/api/user/verify
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjZmY2I4MzJlMjM5ZGU4ZjIxZCIsImVtYWlsIjoiamQyQG1haWwuY29tIiwiYWNjZXNzX3Blcm0iOiJhZG1pbiIsImlhdCI6MTY4MTE4NzUyNSwiZXhwIjoxNjgxMjczOTI1fQ.RUOAvugkH63DfulfTNBFS99ITzDXp61KDxNWY0K0gCY
+
+###
+
+GET http://localhost:3001/api/user/info
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjZmY2I4MzJlMjM5ZGU4ZjIxZCIsImVtYWlsIjoiamQyQG1haWwuY29tIiwiYWNjZXNzX3Blcm0iOiJhZG1pbiIsImlhdCI6MTY4MjA0MjQxOCwiZXhwIjoxNjgyMTI4ODE4fQ.gWnx47_GQQ6MniEtM6OSEEJlMm-rZa9jDn7EtF17Hfs
+
+###
+
+POST http://localhost:3001/api/user/calib_update/641bd26fcb832e239de8f21d
+Authorization: token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MWJkMjZmY2I4MzJlMjM5ZGU4ZjIxZCIsImVtYWlsIjoiamQyQG1haWwuY29tIiwiYWNjZXNzX3Blcm0iOiJhZG1pbiIsImlhdCI6MTY4MTUzMDk1MCwiZXhwIjoxNjgxNjE3MzUwfQ.HSlEibchq5GhWr1uv-lLxbJ5u-i6tSmK-BBTktucaTs
+Content-Type: application/json
+
+{
+    "calib_image": "<base64 calibration image>"
+}
